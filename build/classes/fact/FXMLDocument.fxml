@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1350.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="fact.FXMLDocumentController">
+  <children>
+    <Button fx:id="button" layoutX="888.0" layoutY="44.0" onAction="#handleButtonAction" prefHeight="30.0" text="Buscar" />
+    <Label fx:id="label" layoutX="519.0" layoutY="14.0" minHeight="16.0" minWidth="69.0" text="Fact-Checking MagusClaim">
+      <font>
+        <Font name="Times New Roman Bold" size="26.0" />
+      </font>
+    </Label>
+    <AnchorPane id="AnchorPane" layoutX="61.0" layoutY="122.0" />
+    <Label alignment="CENTER" layoutX="14.0" layoutY="44.0" prefHeight="30.0" prefWidth="70.0" text="NEWS:" textAlignment="CENTER">
+      <font>
+        <Font name="Arial Bold" size="16.0" />
+      </font>
+    </Label>
+    <TextField fx:id="teste" layoutX="84.0" layoutY="44.0" prefHeight="30.0" prefWidth="790.0" />
+    <TabPane layoutX="0.0" layoutY="82.0" prefHeight="568.0" prefWidth="1350.0" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab text="Google Fact Check Tools">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <WebView fx:id="webSite" layoutX="0.0" layoutY="0.0" prefHeight="537.0" prefWidth="1350.0" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Full Fact">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <WebView fx:id="webSite2" layoutX="0.0" layoutY="0.0" prefHeight="530.0" prefWidth="1350.0" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </children>
+</AnchorPane>
